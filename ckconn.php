@@ -21,12 +21,12 @@ error_reporting(E_ALL & ~E_NOTICE);
 //header("Content-Type: text/html; charset=GB2312");//设置头信息
 //mysql_select_db选择 MySQL 数据库
 //第一步：
-define ( 'DB_HOST', 'qdm163657275.my3w.com:3306' );
-define ( 'DB_USER', 'qdm163657275' );
-define ( 'DB_PWD', 'zx458501' );
+define ( 'DB_HOST', '127.0.0.1' );
+define ( 'DB_USER', 'root' );
+define ( 'DB_PWD', 'root' );
 $SF = mysql_connect ( DB_HOST, DB_USER, DB_PWD ) or die ( "mysql_connect err");
 mysql_query("SET NAMES 'UTF8'"); 
 //第二步:连接数据库
-define ( 'DB_NAME', 'qdm163657275_db' );
+define ( 'DB_NAME', 'test' );
 mysql_select_db ( DB_NAME, $SF ) or die ( "mysql_select_db err"); //连接上数据库了
 ?>
